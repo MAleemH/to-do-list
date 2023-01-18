@@ -1,10 +1,14 @@
-import './style.css';
+// import javaScript from modules
+import toDoList from './modules/list.js';
+// call elements
+const listContainer = document.querySelector('.list-container');
 
-const component = () => {
-  const element = document.createElement('div');
-  element.innerHTML = '<p>To Do List</p>';
-  element.classList.add('todo');
-  return element;
+const toDos = () => {
+  toDoList.forEach((item) => {
+    listContainer.innerHTML += `
+      <li>${item.description}</li>
+    `;
+  });
 };
 
-document.body.appendChild(component());
+toDos();
