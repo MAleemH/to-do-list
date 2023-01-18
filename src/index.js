@@ -6,7 +6,13 @@ const listContainer = document.querySelector('.list-container');
 const toDos = () => {
   toDoList.forEach((item) => {
     listContainer.innerHTML += `
-      <li>${item.description}</li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="${item.index}">
+        <label class="form-check-label">
+            ${item.description}
+        </label>
+    </div>
+    <hr>
     `;
   });
 };
