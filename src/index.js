@@ -1,3 +1,5 @@
+// import css
+import './style.css';
 // import javaScript from modules
 import toDoList from './modules/list.js';
 // call elements
