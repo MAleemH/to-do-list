@@ -1,0 +1,29 @@
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+#add-todo {
+  font-style: italic;
+  border: none;
+}
+
+.list-container {
+  padding: 0;
+  margin: 0;
+}
+
+.bottom {
+  background-color: #b0b2b8;
+  color: gray;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
