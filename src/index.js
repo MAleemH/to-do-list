@@ -1,22 +1,14 @@
-// import css
+import TodoList from './modules/todoList.js';
+import Form from './modules/form.js';
 import './style.css';
-// import javaScript from modules
-import toDoList from './modules/list.js';
-// call elements
-const listContainer = document.querySelector('.list-container');
 
-const toDos = () => {
-  toDoList.forEach((item) => {
-    listContainer.innerHTML += `
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="${item.index}">
-        <label class="form-check-label">
-            ${item.description}
-        </label>
-    </div>
-    <hr>
-    `;
+window.onload = () => {
+  const myList = new TodoList('ul');
+
+  const myForm = new Form(myList, {
+    newTaskInput: 'new_task_input',
+    newTaskIcon: 'new_task_icon',
+    clearAllCompletedTasks: 'clear_all_completed_tasks',
   });
+  myForm();
 };
-
-toDos();

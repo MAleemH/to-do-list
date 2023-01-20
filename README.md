@@ -74,24 +74,36 @@ Local Machine, Git, Text Editor (VS Code preferably)
 
 ### Setup
 
-Checkout the project repository <a href="https://github.com/MAleemH/to-do-list/tree/main">here</a>
+Create a folder to clone github repository.
 
 ### Install
 
-You can use the repository HTTPS or SSH urls to clone the project on your local machine or download the ZIP folder and extract its contents.
+Clone this repository to your desired folder:
+
+
+Example commands:
+
+```sh
+  cd my-folder
+  git clone https://github.com/MAleemH/to-do-list.git
+```
 
 ### Usage
 
-Run the index.html file in the root directory of the project using any browser.
+Open your terminal of VS Code and write following commands to run this project on local server:
+
+```sh
+  npm run build
+  npm run start
+```
 
 ### Run tests
 
-Use Chrome dev tools
-Ensure to checkout any linter errors
+After the above step, program will start running. You can perform desired activities.
 
 ### Deployment
 
-Use Github pages for free and secure deployment.
+Use Github Pages for free and secure deployment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
