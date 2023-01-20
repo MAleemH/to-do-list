@@ -10,4 +10,5 @@ window.onload = () => {
     newTaskIcon: 'new_task_icon',
     clearAllCompletedTasks: 'clear_all_completed_tasks',
   });
+  myForm();
 };
